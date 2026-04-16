@@ -6,7 +6,7 @@ def mode_aléatoire():
     aléatoire = ["Course", "Bataille"]
     return random.choice(aléatoire)
 def condition_course():
-    conditions = ["Standard", "Position Précise", "Battle Royale", "Position Moyenne", "Points", "Position Globale (Equipe)"]
+    conditions = ["Standard", "Position Précise", "Battle Royale", "Position Moyenne", "Position Globale (Equipe)"]
     return random.choice(conditions)
 def modificateur_course():
     modificateurs = ["Aucun", "Aucun", "Aucun", "Equipe", "Compo Spécifique", "Type de Véhicule", "Bots", "Objets", "Cylindrée"]
