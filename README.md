@@ -24,7 +24,6 @@ Nous en sommes à la version 1.0.1, voici le changelog : Légers changements li�
 - Position précise (1-12e)
 - Battle Royale (Yoshis)
 - Position moyenne (1-12e en moyenne sur les courses)
-- Points (Ceux du jeu de base)
 - Position globale (Equipe uniquement)
 
 ## Modificateurs
