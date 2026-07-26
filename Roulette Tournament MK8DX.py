@@ -118,19 +118,19 @@ elif mode == "a":
         if modificateur_actuel == "Compo Spécifique":
             time.sleep(0.5)
             print(composition())
-        elif modificateur_actuel == "Type de Véhicule":
+        if modificateur_actuel == "Type de Véhicule":
             time.sleep(0.5)
             print("Type de véhicule :", type_véhicule())
-        elif modificateur_actuel == "Bots":
+        if modificateur_actuel == "Bots":
             time.sleep(0.5)
             print("Paramètres des bots :", bots())
-        elif condition_actuelle == "Position Précise":
+        if condition_actuelle == "Position Précise":
             time.sleep(0.5)
             print("Position précise :", position_précise())
-        elif modificateur_actuel == "Objets":
+        if modificateur_actuel == "Objets":
             time.sleep(0.5)
             print("Type d'objets :", objets_course())
-        elif modificateur_actuel == "Cylindrée":
+        if modificateur_actuel == "Cylindrée":
             time.sleep(0.5)
             print("Cylindrée :", cylindrée())
     elif mode_actuel == "Bataille":
@@ -146,16 +146,16 @@ elif mode == "a":
         if modificateur_bataille_actuel == "Compo Spécifique":
             time.sleep(0.5)
             print(composition())
-        elif modificateur_bataille_actuel == "Type de Véhicule":
+        if modificateur_bataille_actuel == "Type de Véhicule":
             time.sleep(0.5)
             print("Type de véhicule :", type_véhicule())
-        elif modificateur_bataille_actuel == "Bots":
+        if modificateur_bataille_actuel == "Bots":
             time.sleep(0.5)
             print("Paramètres des bots :", bots())
-        elif condition_bataille_actuelle == "Position Précise":
+        if condition_bataille_actuelle == "Position Précise":
             time.sleep(0.5)
             print("Position précise :", position_précise())
-        elif modificateur_bataille_actuel == "Objets":
+        if modificateur_bataille_actuel == "Objets":
             time.sleep(0.5)
             print("Type d'objets :", objets_course())
 
