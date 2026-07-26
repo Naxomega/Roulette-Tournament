@@ -34,7 +34,7 @@ def bots():
     robots = ["Facile", "Moyen", "Difficile"]
     return random.choice(robots)
 def position_précise():
-    return random.randint(1, players)
+    return random.randint(1, players-1)
 def objets_course():
     objets = ["Explosif", "Personalisé"]
     return random.choice(objets)
