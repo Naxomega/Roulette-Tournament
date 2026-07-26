@@ -15,7 +15,7 @@ def mode_bataille():
     modes = ["Ballons", "Pièces", "Bob-ombs", "Traque sur Piste (Equipe)", "Capture de Soleil", "Bataille Aléatoire"]
     return random.choice(modes)
 def condition_bataille():
-    conditions = ["Standard", "Score (Equipe)", "Position Moyenne", "Battle Royale (Solo)"]
+    conditions = ["Standard", "Score (Equipe)", "Position Moyenne", "Battle Royale (Solo)", "Position Précise"]
     return random.choice(conditions)
 def modificateur_bataille():
     modificateurs = ["Aucun", "Aucun", "Aucun", "Equipe", "Compo Spécifique", "Type de Véhicule", "Bots", "Objets"]
@@ -54,19 +54,19 @@ if mode == "c":
     if modificateur_actuel == "Compo Spécifique":
         time.sleep(0.5)
         print(composition())
-    elif modificateur_actuel == "Type de Véhicule":
+    if modificateur_actuel == "Type de Véhicule":
         time.sleep(0.5)
         print("Type de véhicule :", type_véhicule())
-    elif modificateur_actuel == "Bots":
+    if modificateur_actuel == "Bots":
         time.sleep(0.5)
         print("Paramètres des bots :", bots())
-    elif condition_actuelle == "Position Précise":
+    if condition_actuelle == "Position Précise":
         time.sleep(0.5)
         print("Position précise :", position_précise())
-    elif modificateur_actuel == "Objets":
+    if modificateur_actuel == "Objets":
         time.sleep(0.5)
         print("Type d'objets :", objets_course())
-    elif modificateur_actuel == "Cylindrée":
+    if modificateur_actuel == "Cylindrée":
         time.sleep(0.5)
         print("Cylindrée :", cylindrée())
 
@@ -86,13 +86,13 @@ elif mode == "b":
     if modificateur_bataille_actuel == "Compo Spécifique":
         time.sleep(0.5)
         print(composition())
-    elif modificateur_bataille_actuel == "Type de Véhicule":
+    if modificateur_bataille_actuel == "Type de Véhicule":
         time.sleep(0.5)
         print("Type de véhicule :", type_véhicule())
-    elif modificateur_bataille_actuel == "Bots":
+    if modificateur_bataille_actuel == "Bots":
         time.sleep(0.5)
         print("Paramètres des bots :", bots())
-    elif modificateur_bataille_actuel == "Objets":
+    if modificateur_bataille_actuel == "Objets":
         time.sleep(0.5)
         print("Type d'objets :", objets_course())
     if condition_bataille_actuelle == "Position Précise":
